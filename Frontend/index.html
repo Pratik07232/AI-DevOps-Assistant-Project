@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI DevOps Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🤖</div>
+
+    <h1>AI DevOps Assistant</h1>
+
+    <p>
+        Diagnose Docker & Kubernetes problems
+    </p>
+
+</header>
+
+
+<main>
+
+    <section class="card">
+
+        <h2>🔍 Analyze Your Problem</h2>
+
+        <p class="description">
+            Enter a Docker, Kubernetes, or CI/CD error
+            and get troubleshooting guidance.
+        </p>
+
+        <textarea
+            id="errorInput"
+            placeholder="Example: CrashLoopBackOff"
+        ></textarea>
+
+        <button onclick="analyzeProblem()">
+            🔍 Analyze Problem
+        </button>
+
+    </section>
+
+
+    <section
+        id="result"
+        class="card result-card hidden">
+
+        <h2>🛠 Troubleshooting Result</h2>
+
+        <div id="resultContent"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        AI DevOps Assistant
+        |
+        Docker • Kubernetes • GitHub Actions
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
